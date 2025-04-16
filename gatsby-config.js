@@ -4,7 +4,7 @@ module.exports = {
     author: `Chris Do`,
     description: `A personal site about Chris Do`,
   },
-  pathPrefix: "/",
+  pathPrefix: "/website",
   plugins: [
     {
       resolve: `gatsby-plugin-typography`,

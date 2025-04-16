@@ -4,7 +4,7 @@
   "version": "1.0.1",
   "author": "chris.n.do@gmail.com",
   "dependencies": {
-    "gatsby": "^5.13.6",
+    "gatsby": "^5.14.3",
     "gatsby-cli": "^5.13.3",
     "gatsby-plugin-gatsby-cloud": "^5.13.1",
     "gatsby-plugin-google-fonts": "^1.0.1",

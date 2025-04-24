@@ -25,22 +25,22 @@ class Navigation extends React.Component {
           </li>
           <li className={isCurrent('#about', pathname)}>
             <a className="smoothscroll" href="#about">
-              About
+              Leadership
             </a>
           </li>
-          <li className={isCurrent('#education', pathname)}>
-            <a className="smoothscroll" href="#education">
-              Education
+          <li className={isCurrent('#who', pathname)}>
+            <a className="smoothscroll" href="#who">
+              Who we are
             </a>
           </li>
-          <li className={isCurrent('#work', pathname)}>
-            <a className="smoothscroll" href="#work">
-              Work
+          <li className={isCurrent('#what', pathname)}>
+            <a className="smoothscroll" href="#what">
+              What we do
             </a>
           </li>
-          <li className={isCurrent('#certs', pathname)}>
-            <a className="smoothscroll" href="#certs">
-              Certifications
+          <li className={isCurrent('#clients', pathname)}>
+            <a className="smoothscroll" href="#clients">
+              Who we work for
             </a>
           </li>
         </ul>

@@ -1,25 +1,22 @@
 import React from 'react'
-import { resume } from '../../resume'
+import { content } from '../../content'
 
-const Education = () => (
-  <div className="row education">
+const Who = () => (
+  <div className="row section">
     <font color="#0353a3">
       <div className="three columns header-col">
         <h1>
           {/* <span>Education</span> */}
-          <span>Education</span>
+          <span>Who we are</span>
         </h1>
       </div>
 
       <div className="nine columns main-col">
-        {resume.education.map((school) => (
+        {content.who.map((item) => (
           <>
             <div className="row item">
               <div className="twelve columns">
-                <h3>{school.name}</h3>
-                <p>
-                  {school.degree} - <em className="date">{school.year}</em>
-                </p>
+                <h3><li>{item}</li></h3>
               </div>
             </div>
           </>
@@ -29,4 +26,4 @@ const Education = () => (
   </div>
 )
 
-export default Education
+export default Who

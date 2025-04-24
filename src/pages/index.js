@@ -5,14 +5,14 @@ import '../assets/css/main.css'
 
 import Header from '../components/Header'
 import About from '../components/About'
-import Resume from '../components/Resume'
+import Sections from '../components/Sections'
 import Footer from '../components/Footer'
 
 const IndexPage = () => (
   <div>
     <Header />
     <About />
-    <Resume />
+    <Sections />
     <Footer />
   </div>
 )

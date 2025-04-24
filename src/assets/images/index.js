@@ -6,7 +6,7 @@ import { siteMetadata } from '../../gatsby-config'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet>
-      <title>christopher.do</title>
+      <title>KADO</title>
       <meta name="author" description={siteMetadata.author} />
       <link
         rel="stylesheet"

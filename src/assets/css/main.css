@@ -1293,6 +1293,7 @@ header .banner-text h1 {
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+  font-weight: 800;
 }
 
 header .banner-text h3 {

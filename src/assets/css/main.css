@@ -183,10 +183,10 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #F5F5F5;
   font-family: 'opensans-regular', sans-serif;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 30px;
   color: #838C95;
 
@@ -1247,7 +1247,7 @@ properly.
 /* ------------------------------------------------------------------ */
 
 body {
-  background: #ffffff;
+  background: #F5F5F5;
 }
 
 /* ------------------------------------------------------------------ */
@@ -1256,8 +1256,8 @@ body {
 
 header {
   position: relative;
-  height: 800px;
-  min-height: 500px;
+  height: 600px;
+  min-height: 400px;
   width: 100%;
   background: #161415 url(../images/growth.jpg) no-repeat top center;
   background-size: cover !important;
@@ -1289,7 +1289,7 @@ header .banner-text {
 
 header .banner-text h1 {
   font: 90px/1.1em "opensans-bold", sans-serif;
-  color: #fff;
+  color: #9F916A;
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
@@ -1442,9 +1442,9 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #about {
-  background: #819C6F;
-  padding-top: 96px;
-  padding-bottom: 66px;
+  background: #F5F5F5;
+  padding-top: 30px;
+  padding-bottom: 30px;
   overflow: hidden;
 }
 
@@ -1460,8 +1460,9 @@ ul#nav li.current a {
 
 #about h2 {
   font: 22px/30px "opensans-bold", sans-serif;
-  color: #fff;
+  color: #1e0180;
   margin-bottom: 12px;
+  font-weight: 800;
 }
 
 #about p {
@@ -1516,122 +1517,60 @@ ul#nav li.current a {
 
 
 
-/* ------------------------------------------------------------------ */
-/* d. Resume Section
-/* ------------------------------------------------------------------ */
-
-/* #resume,
-#who,
-#work,
-#certs {
-  background: #fff;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  overflow: hidden;
-  border-bottom: 1px solid #e8e8e8;
-}
-
-#resume a,
-#who a,
-#work a,
-#certs a #resume a:visited,
-#who a:visited,
-#work a:visited,
-#certs a:visited {
-  color: #11abb0;
-}
-
-#resume a:hover,
-#who a:hover,
-#work a:hover,
-#certs a:hover #resume a:focus,
-#who a:focus,
-#work a:focus,
-#certs a:focus {
-  color: #313131;
-}
-
-#resume h1,
-#who h1,
-#work h1,
-#certs h1 {
-  font: 18px/24px "opensans-bold", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-#resume h1 span,
-#who h1 span,
-#work h1 span,
-#certs h1 span {
-  border-bottom: 3px solid #11abb0;
-  padding-bottom: 6px;
-}
-
-#resume h3,
-#who h3,
-#work h3,
-#certs h3 {
-  font: 25px/30px "opensans-bold", sans-serif;
-}
-
-#resume .header-col,
-#who .header-col,
-#work .header-col,
-#certs .header-col {
-  padding-top: 9px;
-  text-align: right;
-}
-
-#resume .main-col,
-#who .main-col,
-#work .main-col,
-#certs .main-col {
-  padding-right: 10%;
-}
-
-.who,
-.work {
-  margin-bottom: 48px;
-  padding-top: 50px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #e8e8e8;
-}
-
-#resume .info,
-#who .info,
-#work .info,
-#certs .info {
-
-  color: #000000;
-  margin-bottom: 18px;
-  margin-top: 9px;
-}
-
-#resume .info span,
-#who .info span,
-#work .info span,
-#certs .info span {
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-#resume .date,
-#who .date,
-#work .date,
-#certs .date {
-
-  margin-top: 6px;
-} */
 
 /* Unified Section Styles */
 .section {
-  background: #fff;
+  background: #F5F5F5;
   padding-top: 50px;
   padding-bottom: 50px;
   overflow: hidden;
   border-bottom: 1px solid #e8e8e8;
 }
+
+/* Green background option */
+.section-green {
+  background-color: #819C6F;
+  width: 100%;
+  /* Use 100% instead of 100vw */
+  margin: 0;
+  /* Remove any margins */
+  padding: 50px 0;
+  /* Add padding for spacing */
+  box-sizing: border-box;
+  /* Ensure padding doesn't affect width */
+}
+
+/* Green background option */
+.section-grey {
+  background-color: #F5F5F5;
+  width: 100%;
+  /* Use 100% instead of 100vw */
+  margin: 0;
+  /* Remove any margins */
+  padding: 50px 0;
+  /* Add padding for spacing */
+  box-sizing: border-box;
+  /* Ensure padding doesn't affect width */
+}
+
+.section-green .row {
+  width: 100%;
+  /* Allow the row to span the full width */
+  max-width: none;
+  /* Remove any max-width constraints */
+  margin: 0;
+  /* Remove default margins */
+}
+
+.section-grey .row {
+  width: 100%;
+  /* Allow the row to span the full width */
+  max-width: none;
+  /* Remove any max-width constraints */
+  margin: 0;
+  /* Remove default margins */
+}
+
 
 .section a,
 .section a:visited {
@@ -1650,7 +1589,8 @@ ul#nav li.current a {
 }
 
 .section h1 span {
-  border-bottom: 3px solid #11abb0;
+  border-bottom: 3px solid #000000;
+  color: #CDAF81;
   padding-bottom: 6px;
 }
 
@@ -2235,15 +2175,6 @@ footer .social li:first-child {
     width: 50%;
   }
 
-  /* Resume Section
- ------------------------------------------------------------------- */
-  #resume h1 {
-    font: 16px/24px
-  }
-
-  #resume .main-col {
-    padding-right: 5%;
-  }
 
 
   /* Call to Action Section

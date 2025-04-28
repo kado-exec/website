@@ -9,15 +9,12 @@ const Banner = () => (
       <h1 className="responsive-headline">{content.author}</h1>
       <h3>
         <span>
+          {content.subtitle}
+        </span><br />
+        <span>
           {content.description}
         </span>
-      </h3><br /><br /><br /><br /><br />
-      <a className="smoothscroll" href="#about">
-        Start scrolling for more info about us
-      </a>
-
-      <br />
-      <hr />
+      </h3><br /><br />
       <SocialLinks />
     </div>
   </div>

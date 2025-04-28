@@ -4,14 +4,13 @@ import React from 'react'
 import '../assets/css/main.css'
 
 import Header from '../components/Header'
-import About from '../components/About'
 import Sections from '../components/Sections'
 import Footer from '../components/Footer'
 
 const IndexPage = () => (
   <div>
     <Header />
-    <About />
+    {/* <About /> */}
     <Sections />
     <Footer />
   </div>

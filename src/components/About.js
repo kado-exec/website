@@ -11,17 +11,6 @@ const About = () => (
         <img className="profile-pic" src={profilePicKate} alt="Profile 1" />
         <h2>Kate</h2>
         <p>{content.about}</p>
-        <div className="contact-details">
-          <h2>Contact Details</h2>
-          <p className="address">
-            {content.contact.map((info, index) => (
-              <React.Fragment key={index}>
-                <span>{info}</span>
-                <br />
-              </React.Fragment>
-            ))}
-          </p>
-        </div>
       </div>
 
       {/* Right Column - Person 2 */}
@@ -29,17 +18,6 @@ const About = () => (
         <img className="profile-pic" src={profilePicKelsey} alt="Profile 2" />
         <h2>Kelsey</h2>
         <p>{content.about2}</p>
-        <div className="contact-details">
-          <h2>Contact Details</h2>
-          <p className="address">
-            {content.contact2.map((info, index) => (
-              <React.Fragment key={index}>
-                <span>{info}</span>
-                <br />
-              </React.Fragment>
-            ))}
-          </p>
-        </div>
       </div>
     </div>
   </section>

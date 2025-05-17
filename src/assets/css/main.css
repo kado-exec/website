@@ -188,12 +188,14 @@ body {
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  color: #838C95;
+  color: #000000;
 
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
+
+
 
 /*  2. Typography
        Vertical rhythm with leading derived from 6
@@ -205,7 +207,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #313131;
+  color: #000;
   font-family: 'opensans-bold', sans-serif;
   font-weight: normal;
 }
@@ -748,6 +750,9 @@ input::-moz-focus-inner {
   margin: 0 auto;
 }
 
+
+
+
 /* fixed width for IE8 */
 .ie .row {
   width: 1000px;
@@ -1256,8 +1261,8 @@ body {
 
 header {
   position: relative;
-  height: 600px;
-  min-height: 400px;
+  height: 500px;
+  min-height: 300px;
   width: 100%;
   background: #161415 url(../images/growth.jpg) no-repeat top center;
   background-size: cover !important;
@@ -1279,17 +1284,18 @@ header .banner {
   vertical-align: middle;
   margin: 0 auto;
   width: 85%;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
 header .banner-text {
   width: 100%;
+
 }
 
 header .banner-text h1 {
-  font: 90px/1.1em "opensans-bold", sans-serif;
-  color: #9F916A;
+  font: 70px/1.1em "opensans-bold", sans-serif;
+  color: #000000;
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
@@ -1441,69 +1447,19 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 /* c. About Section
 /* ------------------------------------------------------------------ */
-
-#about {
-  background: #F5F5F5;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  overflow: hidden;
+.about-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 200px;
+  margin: 0 auto;
+  padding: 0 50px;
 }
 
-#about a,
-#about a:visited {
-  color: #fff;
-}
-
-#about a:hover,
-#about a:focus {
-  color: #11abb0;
-}
-
-#about h2 {
-  font: 22px/30px "opensans-bold", sans-serif;
-  color: #1e0180;
-  margin-bottom: 12px;
-  font-weight: 800;
-}
-
-#about p {
-  line-height: 20px;
-  color: #000000;
-}
-
-#about .profile-pic {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  border-radius: 100%;
-}
-
-#about .contact-details {
-  width: 41.66667%;
-}
-
-#about .download {
-  width: 58.33333%;
-  padding-top: 6px;
-}
-
-#about .main-col {
-  padding-right: 5%;
-}
-
-#about .download .button {
-  margin-top: 6px;
-  background: #444;
-}
-
-#about .download .button:hover {
-  background: #fff;
-  color: #2b2b2b;
-}
-
-#about .download .button i {
-  margin-right: 15px;
-  font-size: 20px;
+.about-column {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
 }
 
 .about-card {
@@ -1513,11 +1469,17 @@ ul#nav li.current a {
   justify-content: center;
   text-align: center;
   padding: 10px;
-  min-height: 100%;
+  width: 45%;
+  box-sizing: border-box;
 }
 
-
-
+.profile-pic {
+  width: 170px;
+  height: 170px;
+  border-radius: 40%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
 
 /* Unified Section Styles */
 .section {
@@ -1525,51 +1487,50 @@ ul#nav li.current a {
   padding-top: 50px;
   padding-bottom: 50px;
   overflow: hidden;
-  border-bottom: 1px solid #e8e8e8;
+  position: relative;
+}
+
+.section:after {
+  content: "";
+  display: block;
+  width: 75%;
+  height: 3px;
+  background-color: #DAB788;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 /* Green background option */
 .section-green {
   background-color: #819C6F;
   width: 100%;
-  /* Use 100% instead of 100vw */
   margin: 0;
-  /* Remove any margins */
   padding: 50px 0;
-  /* Add padding for spacing */
   box-sizing: border-box;
-  /* Ensure padding doesn't affect width */
 }
 
 /* Green background option */
 .section-grey {
   background-color: #F5F5F5;
   width: 100%;
-  /* Use 100% instead of 100vw */
   margin: 0;
-  /* Remove any margins */
   padding: 50px 0;
-  /* Add padding for spacing */
   box-sizing: border-box;
-  /* Ensure padding doesn't affect width */
 }
 
 .section-green .row {
   width: 100%;
-  /* Allow the row to span the full width */
   max-width: none;
-  /* Remove any max-width constraints */
   margin: 0;
-  /* Remove default margins */
 }
 
 .section-grey .row {
   width: 100%;
-  /* Allow the row to span the full width */
   max-width: none;
-  /* Remove any max-width constraints */
   margin: 0;
-  /* Remove default margins */
 }
 
 
@@ -1591,7 +1552,7 @@ ul#nav li.current a {
 
 .section h1 span {
   border-bottom: 3px solid #000000;
-  color: #CDAF81;
+  color: #000000;
   padding-bottom: 6px;
 }
 
@@ -1609,6 +1570,24 @@ ul#nav li.current a {
   padding-right: 10%;
 }
 
+.section .main-col h1 {
+  font: 32x/36px "opensans-bold", sans-serif;
+  font-weight: 600;
+  color: #000000;
+  border-bottom: 1px solid #ccc;
+  max-width: 90%;
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.section .main-col h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
 .section .info {
   color: #000000;
   margin-bottom: 18px;
@@ -1622,6 +1601,37 @@ ul#nav li.current a {
 
 .section .date {
   margin-top: 6px;
+}
+
+.custom-bullet-list {
+  color: #000000;
+  list-style: none;
+  /* Remove default bullets */
+  padding-left: 0;
+  /* Remove default padding */
+  text-align: left;
+  /* Align text to the left */
+}
+
+.custom-bullet-list li {
+  color: #000000;
+  position: relative;
+  padding-left: 25px;
+  /* Add space for the custom bullet */
+  margin-bottom: 10px;
+  /* Add spacing between items */
+}
+
+.custom-bullet-list li:before {
+  content: "•";
+  /* Custom bullet icon */
+  position: absolute;
+  left: 0;
+  color: #000000;
+  /* Gold-ish color for the bullet */
+  font-size: 20px;
+  /* Adjust bullet size */
+  line-height: 1;
 }
 
 /*----------------------------------------------*/
@@ -1672,161 +1682,6 @@ ul#nav li.current a {
   border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
-  width: 60%;
-  -moz-animation: photoshop 2s ease;
-  -webkit-animation: photoshop 2s ease;
-}
-
-.illustrator {
-  width: 55%;
-  -moz-animation: illustrator 2s ease;
-  -webkit-animation: illustrator 2s ease;
-}
-
-.wordpress {
-  width: 50%;
-  -moz-animation: wordpress 2s ease;
-  -webkit-animation: wordpress 2s ease;
-}
-
-.css {
-  width: 90%;
-  -moz-animation: css 2s ease;
-  -webkit-animation: css 2s ease;
-}
-
-.html5 {
-  width: 80%;
-  -moz-animation: html5 2s ease;
-  -webkit-animation: html5 2s ease;
-}
-
-.jquery {
-  width: 50%;
-  -moz-animation: jquery 2s ease;
-  -webkit-animation: jquery 2s ease;
-}
-
-@-moz-keyframes photoshop {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 60%;
-  }
-}
-
-@-moz-keyframes illustrator {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 55%;
-  }
-}
-
-@-moz-keyframes wordpress {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 50%;
-  }
-}
-
-@-moz-keyframes css {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 90%;
-  }
-}
-
-@-moz-keyframes html5 {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 80%;
-  }
-}
-
-@-moz-keyframes jquery {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 50%;
-  }
-}
-
-@-webkit-keyframes photoshop {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 60%;
-  }
-}
-
-@-webkit-keyframes illustrator {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 55%;
-  }
-}
-
-@-webkit-keyframes wordpress {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 50%;
-  }
-}
-
-@-webkit-keyframes css {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 90%;
-  }
-}
-
-@-webkit-keyframes html5 {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 80%;
-  }
-}
-
-@-webkit-keyframes jquery {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 50%;
-  }
-}
 
 
 /* ------------------------------------------------------------------ */
@@ -1980,26 +1835,6 @@ ul#nav li.current a {
   top: 17px;
 }
 
-/* Twitter Feed */
-#twitter {
-  margin-top: 12px;
-  padding: 0;
-}
-
-#twitter li {
-  margin: 6px 0px 12px 0;
-  line-height: 30px;
-}
-
-#twitter li span {
-  display: block;
-}
-
-#twitter li b a {
-  font: 13px/36px "opensans-regular", Sans-serif;
-  color: #474747 !important;
-  border: none;
-}
 
 /* ------------------------------------------------------------------ */
 /* i. Footer
@@ -2160,23 +1995,6 @@ footer .social li:first-child {
   }
 
 
-  /* About Section
- ------------------------------------------------------------------- */
-  #about .profile-pic {
-    width: 114px;
-    height: 114px;
-    margin-left: 12px;
-  }
-
-  #about .contact-details {
-    width: 50%;
-  }
-
-  #about .download {
-    width: 50%;
-  }
-
-
 
   /* Call to Action Section
  ------------------------------------------------------------------- */
@@ -2210,6 +2028,7 @@ footer .social li:first-child {
 
   /* mobile navigation
  -------------------------------------------------------------------- */
+
   #nav-wrap {
     font: 12px 'opensans-bold', sans-serif;
     background: transparent !important;
@@ -2341,81 +2160,38 @@ footer .social li:first-child {
 
   /* About Section
  -------------------------------------------------------------------- */
-  #about .profile-pic {
-    display: none;
+  .about-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 0;
   }
 
-  #about .download .button {
-    width: 100%;
+  .about-column {
+    flex: 1 1 100%;
+    max-width: 100%;
     text-align: center;
-    padding: 15px 20px;
+    margin: 0 auto;
   }
 
-  #about .main-col {
-    padding-right: 30px;
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px auto;
   }
-
 
   .bars {
     width: 100%;
   }
 
 
-
-  /* contact Section
- ----------------------------------------------------------------------- */
-  #contact {
-    padding-bottom: 66px;
-  }
-
-  #contact .section-head {
-    margin-bottom: 12px;
-  }
-
-  #contact .section-head h1 {
-    font: 16px/24px 'opensans-bold', sans-serif;
+  .section .main-col h1,
+  .section .main-col h3 {
     text-align: center;
-    margin-bottom: 30px;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-  }
-
-  #contact h1 span {
-    display: block;
-  }
-
-  #contact .header-col {
-    padding-top: 0;
-  }
-
-  #contact .header-col h1:before {
-    content: none;
-  }
-
-  #contact .section-head p.lead {
-    text-align: center;
-  }
-
-  /* form */
-  #contact label {
-    float: none;
-    width: 100%;
-  }
-
-  #contact input,
-  #contact textarea,
-  #contact select {
-    margin-bottom: 6px;
-    width: 100%;
-  }
-
-  #contact button.submit {
-    margin: 30px 0 24px 0;
-  }
-
-  #message-warning,
-  #message-success {
-    width: 100%;
-    margin-left: 0;
+    padding-right: 0;
   }
 
 

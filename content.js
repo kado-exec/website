@@ -1,24 +1,42 @@
 module.exports = {
   content: {
     title: 'KADO',
-    author: 'KADO',
+    author: 'KADO Executive Operations',
     subtitle: 'Executive Operations',
-    description: 'Financial and operational insight to fuel what\'s next',
-    about: 'CFO, Small Business Administration | White House OMB Budget Examiner | PMP & Agile Certified | Professional Services Firm | Financial Services | Executive Function Coach | Mom',
+    description: 'Behind the Scenes Partner Demystifying Complexity to Achieve CEO Growth Goals',
+    about: [
+      'CFO, Small Business Administration',
+      'White House OMB Budget Examiner',
+      'PMP & Agile Certified',
+      'Management Consulting',
+      'Financial Services',
+      'MPA, Federal Credit',
+      'Executive Function Coach'
+
+    ]
+    ,
     contact: [
       'Kate Aaby',
       'Washington, DC',
       '555.555.1234',
       'kate@kadoexec.com'
     ],
-    about2: 'Senior Advisor to CFO | Budget Director | Management and Technology Consulting | Professional Services Firm | MBA and MS in Information Systems | Executive Function Coach | Mom',
+    about2: [
+      'AGA President Elect (current/NOVA chapter)',
+      'Senior Advisor to CFO',
+      'Budget Director',
+      'Management and Technology Consulting',
+      'Professional Services Firm',
+      'MBA and MS in Information Systems'
+
+    ],
     contact2: [
       'Kelsey Do',
       'Alexandria, VA',
       '978.339.3338',
       'kelsey@kadoexec.com'
     ],
-    who: "Seasoned executive team with over 30 years of combined experience in financial and operational leadership. Our passion lies in helping organizations maximize resources, streamline processes, and strengthen business operations through smart project management and thoughtful strategy. With a deep commitment to economic development and social impact, we bring a hands-on, collaborative approach to every engagement - empowering leaders to scale sustainably and achieve meaningful results.",
+    who: "We like growing things and calmly fixing messes – at home and at work! Our passion lies in building trusted relationships and navigating challenges to help organizations maximize resources, streamline processes, and strengthen business operations. With a deep commitment to economic development and over 30 years of combined executive experience, we bring a hands-on, collaborative approach, empowering leaders to scale sustainably and achieve meaningful results through smart project management and thoughtful strategy.",
     what_blurb: 'Empower mission-driven leaders to achieve their business growth, resource management, and operational goals with clarity and peace of mind.',
     what: [
       {

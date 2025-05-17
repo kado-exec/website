@@ -4,23 +4,64 @@ import profilePicKate from '../assets/images/kate.png'
 import { content } from '../../content'
 
 const About = () => (
-  <section id="about">
+  <div className="section section-grey">
     <div className="row">
-      {/* Left Column - Person 1 */}
-      <div className="six columns about-card">
-        <img className="profile-pic" src={profilePicKate} alt="Profile 1" />
-        <h2>Kate</h2>
-        <p>{content.about}</p>
+
+      <div className="three columns header-col">
+        <h1>
+          <span>About</span>
+        </h1>
       </div>
 
-      {/* Right Column - Person 2 */}
-      <div className="six columns about-card">
-        <img className="profile-pic" src={profilePicKelsey} alt="Profile 2" />
-        <h2>Kelsey</h2>
-        <p>{content.about2}</p>
+      <div className="row">
+        <div className="three columns header-col"></div>
+        <div className="nine columns main-col">
+          <h1>What we do</h1>
+          <p>{content.what_blurb}</p>
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="three columns header-col"></div>
+        <div className="nine columns main-col">
+          <h1>Who we work with</h1>
+          <p>{content.who_we_work_with}</p>
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="three columns header-col"></div>
+        <div className="nine columns main-col">
+          <h1>Who we are</h1>
+          <p>{content.who}</p>
+        </div>
+      </div>
+
+    </div>
+    <br />
+
+    <div className="row about-row">
+      <div className="about-colum">
+        <img className="profile-pic" src={profilePicKate} alt="Kate Aaby" />
+        <h2>Kate Aaby</h2>
+        <ul className="custom-bullet-list">
+          {content.about.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="about-colum">
+        <img className="profile-pic" src={profilePicKelsey} alt="Kelsey Do" />
+        <h2>Kelsey Do</h2>
+        <ul className="custom-bullet-list">
+          {content.about2.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
       </div>
     </div>
-  </section>
+  </div >
 )
 
 export default About

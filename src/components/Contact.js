@@ -1,47 +1,37 @@
 import React from 'react'
-import profilePic from '../assets/images/profile2.png'
-import { resume } from '../../content'
+import { content } from '../../content'
 
-const About = () => (
-  <section id="about">
+const Contact = () => (
+  <div className="section section-grey">
     <div className="row">
-      {/* Left Column - Person 1 */}
-      <div className="six columns about-card">
-        <img className="profile-pic" src={profilePic} alt="Profile 1" />
-        <h2>About Me</h2>
-        <p>{content.about}</p>
-        <div className="contact-details">
-          <h2>Contact Details</h2>
-          <p className="address">
-            {content.contact.map((info, index) => (
-              <React.Fragment key={index}>
-                <span>{info}</span>
-                <br />
-              </React.Fragment>
+      <div className="three columns header-col">
+        <h1>
+          <span>Contact</span>
+        </h1>
+      </div>
+
+      <div className="row about-row">
+        <div className="about-colum">
+          <h2>Kate Aaby</h2>
+          <ul className="custom-bullet-list">
+            {content.contact.map((item, index) => (
+              <li key={index}>{item}</li>
             ))}
-          </p>
+          </ul>
+        </div>
+
+        <div className="about-colum">
+          <h2>Kelsey Do</h2>
+          <ul className="custom-bullet-list">
+            {content.contact2.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
         </div>
       </div>
 
-      {/* Right Column - Person 2 */}
-      <div className="six columns about-card">
-        <img className="profile-pic" src={profilePic} alt="Profile 2" />
-        <h2>About Me</h2>
-        <p>{content.about2}</p> {/* Add a second `about2` field to your content.js */}
-        <div className="contact-details">
-          <h2>Contact Details</h2>
-          <p className="address">
-            {content.contact2.map((info, index) => (
-              <React.Fragment key={index}>
-                <span>{info}</span>
-                <br />
-              </React.Fragment>
-            ))}
-          </p>
-        </div>
-      </div>
     </div>
-  </section>
+  </div>
 )
 
-export default About
+export default Contact

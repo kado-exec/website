@@ -20,7 +20,7 @@ class Navigation extends React.Component {
           className="logo"
           src={logo}
           alt="logo"
-          style={{ width: '40px', height: '40px', marginRight: '10px' }}
+          style={{ margin: '10px 10px', height: '60px', marginRight: '10px', objectFit: 'contain' }}
         />
         <ul id="nav" className="nav" style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0 }}>
           <li className={isCurrent('#home', pathname)} style={{ margin: '0 10px' }}>
@@ -30,22 +30,17 @@ class Navigation extends React.Component {
           </li>
           <li className={isCurrent('#about', pathname)} style={{ margin: '0 10px' }}>
             <a className="smoothscroll" href="#about">
-              Leadership
+              About
             </a>
           </li>
-          <li className={isCurrent('#who', pathname)} style={{ margin: '0 10px' }}>
-            <a className="smoothscroll" href="#who">
-              Who we are
-            </a>
-          </li>
-          <li className={isCurrent('#what', pathname)} style={{ margin: '0 10px' }}>
-            <a className="smoothscroll" href="#what">
-              What we do
+          <li className={isCurrent('#offerings', pathname)} style={{ margin: '0 10px' }}>
+            <a className="smoothscroll" href="#offerings">
+              Offerings
             </a>
           </li>
           <li className={isCurrent('#clients', pathname)} style={{ margin: '0 10px' }}>
-            <a className="smoothscroll" href="#clients">
-              Who we work with
+            <a className="smoothscroll" href="#contacts">
+              Contact
             </a>
           </li>
         </ul>

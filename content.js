@@ -40,28 +40,19 @@ module.exports = {
     what_blurb: 'Empower mission-driven leaders to achieve their business growth, resource management, and operational goals with clarity and peace of mind.',
     what: [
       {
-        title: 'Fractional Finance & Operations Leadership',
-        description: 'Value of CFO and COO, without full - time executive hires',
-        bullets: [
-          'Financial planning & analysis',
-          'Board reporting presentations',
-          'KPI development & financial dashboards',
-          'Process mapping & workflow optimization',
-          'Cross-functional program management'
-        ],
-        outcome: 'Client outcome: Clear financial picture, aligned operations, and confident leadership team driving toward shared goals'
-      },
-      {
-        title: 'Growth Advisory Services',
-        description: 'Strategic clarity of a growth leader, without adding headcount',
+        title: 'Fractional Finance, Operations and Business Development Leadership',
+        description: 'Value of CFO and COO thought partners without full-time executive hires',
         bullets: [
           'Business development planning & execution',
           'Budget & forecasting support',
           'Pipeline development & proposal management',
-          'Growth readiness assessment',
-          'Expansion planning'
+          'Process mapping & workflow optimization',
+          'Financial planning & analysis',
+          'Board reporting presentations',
+          'KPI development & financial dashboards',
+          'Cross-functional program management '
         ],
-        outcome: 'Client outcome: Grounded, actionable plan for growth with the financial logic and operational readiness to back it up'
+        outcome: 'Client outcome: Clear financial picture, aligned operations, and confident leadership team driving toward shared goals'
       }
     ],
     who_we_work_with: 'Small businesses and mission-driven organizations entering a growth phase, preparing for funding or expansion, or figuring out what\'s next',

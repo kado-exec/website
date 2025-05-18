@@ -6,7 +6,6 @@ import { content } from '../../content'
 const About = () => (
   <div className="section section-grey">
     <div className="row">
-
       <div className="three columns header-col">
         <h1>
           <span>About</span>
@@ -34,32 +33,35 @@ const About = () => (
         <div className="nine columns main-col">
           <h1>Who we are</h1>
           <p>{content.who}</p>
+
+          {/* Two-Column Structure */}
+          <div className="row">
+            {/* Left Column */}
+            <div className="six columns">
+              <center><img className="profile-pic" src={profilePicKate} alt="Kate Aaby" />
+                <h2>Kate Aaby</h2></center>
+              <ul className="custom-bullet-list">
+                {content.about.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Right Column */}
+            <div className="six columns">
+              <center><img className="profile-pic" src={profilePicKelsey} alt="Kelsey Do" />
+                <h2>Kelsey Do</h2></center>
+              <ul className="custom-bullet-list">
+                {content.about2.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
-    </div>
-    <br />
 
-    <div className="row about-row">
-      <div className="about-colum">
-        <img className="profile-pic" src={profilePicKate} alt="Kate Aaby" />
-        <h2>Kate Aaby</h2>
-        <ul className="custom-bullet-list">
-          {content.about.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="about-colum">
-        <img className="profile-pic" src={profilePicKelsey} alt="Kelsey Do" />
-        <h2>Kelsey Do</h2>
-        <ul className="custom-bullet-list">
-          {content.about2.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-      </div>
     </div>
   </div >
 )

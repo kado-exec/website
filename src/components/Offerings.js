@@ -11,45 +11,29 @@ const Offerings = () => (
       </div>
 
       <div className="nine columns main-col">
-
-        <div className="row">
-          {/* Left Column */}
-          <div className="six columns">
-            <h3>{content.what[0].title}</h3>
-            <p className="info">
-              <i>{content.what[0].description}</i>
-            </p>
-            <ul>
-              {content.what[0].bullets.map((bullet, index) => (
-                <li key={index}>• {bullet}</li>
-              ))}
-            </ul>
-            <p className="info">
-              <i>{content.what[0].outcome}</i>
-            </p>
-          </div>
-
-          {/* Right Column */}
-          <div className="six columns">
-            <h3>{content.what[1].title}</h3>
-            <p className="info">
-              <i>{content.what[1].description}</i>
-            </p>
-            <ul>
-              {content.what[1].bullets.map((bullet, index) => (
-                <li key={index}>• {bullet}</li>
-              ))}
-            </ul>
-            <p className="info">
-              <i>{content.what[1].outcome}</i>
-            </p>
-          </div>
-        </div>
+        {content.what.map((what) => (
+          <>
+            <div className="row item">
+              <div className="twelve columns">
+                <h3>{what.title}</h3>
+                <p className="info">
+                  <i>{what.description}</i>
+                </p>
+                <p>
+                  <ul>
+                    {what.bullets.map((bullets) => (
+                      <li>• {bullets}</li>
+                    ))}
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </>
+        ))}
       </div>
     </div>
+
   </div>
-
-
 )
 
 export default Offerings

@@ -15,30 +15,33 @@ class Navigation extends React.Component {
   render() {
     const { pathname = '' } = this.state
     return (
-      <nav id="nav-wrap" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <img
-          className="logo"
-          src={logo}
-          alt="logo"
-          style={{ margin: '10px 10px', height: '60px', marginRight: '10px', objectFit: 'contain' }}
-        />
-        <ul id="nav" className="nav" style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0 }}>
-          <li className={isCurrent('#home', pathname)} style={{ margin: '0 10px' }}>
+      <nav id="nav-wrap">
+        <a className="mobile-btn" href="#nav-wrap" />{' '}
+
+        {/* eslint-disable-line */}
+        <ul id="nav" className="nav">
+          <img
+            className="logo"
+            src={logo}
+            alt="logo"
+            style={{ margin: '10px 10px', height: '60px', marginRight: '10px', objectFit: 'contain' }}
+          />
+          <li className={isCurrent('#home', pathname)}>
             <a className="smoothscroll" href="#home">
               Home
             </a>
           </li>
-          <li className={isCurrent('#about', pathname)} style={{ margin: '0 10px' }}>
+          <li className={isCurrent('#about', pathname)}>
             <a className="smoothscroll" href="#about">
               About
             </a>
           </li>
-          <li className={isCurrent('#offerings', pathname)} style={{ margin: '0 10px' }}>
+          <li className={isCurrent('#education', pathname)}>
             <a className="smoothscroll" href="#offerings">
               Offerings
             </a>
           </li>
-          <li className={isCurrent('#clients', pathname)} style={{ margin: '0 10px' }}>
+          <li className={isCurrent('#work', pathname)}>
             <a className="smoothscroll" href="#contacts">
               Contact
             </a>

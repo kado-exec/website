@@ -9,26 +9,31 @@ const Contact = () => (
           <span>Contact</span>
         </h1>
       </div>
+      <div className="nine columns main-col">
 
-      <div className="row about-row">
-        <div className="about-colum">
-          <h2>Kate Aaby</h2>
-          <ul className="custom-bullet-list">
-            {content.contact.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </div>
+        <div className="row">
+          <div className="six columns">
+            <h3>Kate Aaby</h3>
+            <ul>
+              {content.contact.map((bullet, index) => (
+                <li key={index}>• {bullet}</li>
+              ))}
+            </ul>
 
-        <div className="about-colum">
-          <h2>Kelsey Do</h2>
-          <ul className="custom-bullet-list">
-            {content.contact2.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
+          </div>
+
+          <div className="six columns">
+            <h3>Kelsey Do</h3>
+            <ul>
+              {content.contact2.map((bullet, index) => (
+                <li key={index}>• {bullet}</li>
+              ))}
+            </ul>
+
+          </div>
         </div>
       </div>
+
 
     </div>
   </div>

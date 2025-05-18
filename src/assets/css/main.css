@@ -1261,14 +1261,15 @@ body {
 
 header {
   position: relative;
-  height: 500px;
-  min-height: 300px;
+  height: auto;
+  min-height: 500px;
   width: 100%;
   background: #161415 url(../images/growth.jpg) no-repeat top center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
   text-align: center;
   overflow: hidden;
+  padding-top: 100px;
 }
 
 /* vertically center banner section */
@@ -1284,13 +1285,13 @@ header .banner {
   vertical-align: middle;
   margin: 0 auto;
   width: 85%;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
 header .banner-text {
   width: 100%;
-
+  margin-bottom: 0
 }
 
 header .banner-text h1 {
@@ -1384,6 +1385,8 @@ header .scrolldown a:hover {
 #nav-wrap {
   font: 12px "opensans-bold", sans-serif;
   width: 100%;
+  display: flex;
+  justify-content: center;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   margin: 0 auto;
@@ -1392,6 +1395,30 @@ header .scrolldown a:hover {
   left: 0;
   top: 0;
   background-color: #819C6F;
+  align-items: center;
+}
+
+#nav-wrap .logo {
+  height: 60px;
+  margin-right: 20px;
+}
+
+#nav-wrap ul.nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-wrap ul.nav li {
+  margin: 0 15px;
+}
+
+#nav-wrap ul.nav li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
 }
 
 .opaque {
@@ -2040,22 +2067,24 @@ footer .social li:first-child {
   }
 
   #nav-wrap>a {
+    display: block;
     width: 48px;
     height: 48px;
     text-align: left;
-    background-color: #CC5200;
-    position: relative;
+    background-color: #819C6F;
+    position: absolute;
     border: none;
     float: right;
-
+    justify-content: right;
+    align-items: right;
+    margin: 0;
     font: 0/0 a;
     text-shadow: none;
     color: transparent;
-
-    position: relative;
-    top: 0px;
-    right: 30px;
+    top: 10px;
+    right: 10px;
   }
+
 
   #nav-wrap>a:before,
   #nav-wrap>a:after {
@@ -2094,9 +2123,10 @@ footer .social li:first-child {
   #nav-wrap:target>ul#nav {
     display: block;
     padding: 30px 20px 48px 20px;
-    background: #1f2024;
-    margin: 0 30px;
+    background: #819C6F;
+    margin: 0 20px;
     clear: both;
+    width: 70%;
   }
 
   ul#nav li {
@@ -2105,12 +2135,13 @@ footer .social li:first-child {
     margin: 0 auto;
     padding: 0 4%;
     text-align: left;
-    border-bottom: 1px solid #2D2E34;
+    border-bottom: 1px solid #DAB788;
     border-bottom-style: dotted;
   }
 
   ul#nav li a {
     display: block;
+    color: #fff;
     margin: 0;
     padding: 0;
     margin: 12px 0;

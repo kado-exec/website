@@ -6,7 +6,7 @@ const Offerings = () => (
     <div className="row">
       <div className="three columns header-col">
         <h1>
-          <span>Offerings</span>
+          <span>Services</span>
         </h1>
       </div>
 

@@ -16,9 +16,6 @@ module.exports = {
     ]
     ,
     contact: [
-      'Kate Aaby',
-      'Washington, DC',
-      '555.555.1234',
       'kate@kadoexec.com'
     ],
     about2: [
@@ -31,9 +28,6 @@ module.exports = {
 
     ],
     contact2: [
-      'Kelsey Do',
-      'Alexandria, VA',
-      '978.339.3338',
       'kelsey@kadoexec.com'
     ],
     who: "We like growing things and calmly fixing messes – at home and at work! Our passion lies in building trusted relationships and navigating challenges to help organizations maximize resources, streamline processes, and strengthen business operations. With a deep commitment to economic development and over 30 years of combined executive experience, we bring a hands-on, collaborative approach, empowering leaders to scale sustainably and achieve meaningful results through smart project management and thoughtful strategy.",

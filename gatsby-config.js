@@ -4,7 +4,7 @@ module.exports = {
     author: `KADO Exec Ops`,
     description: `KADO Executive Operations`,
   },
-  pathPrefix: "/website",
+  pathPrefix: "/",
   plugins: [
     {
       resolve: `gatsby-plugin-typography`,

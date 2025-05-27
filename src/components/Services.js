@@ -1,7 +1,7 @@
 import React from 'react'
 import { content } from '../../content'
 
-const Offerings = () => (
+const Services = () => (
   <div className="section section-grey">
     <div className="row">
       <div className="three columns header-col">
@@ -36,4 +36,4 @@ const Offerings = () => (
   </div>
 )
 
-export default Offerings
+export default Services

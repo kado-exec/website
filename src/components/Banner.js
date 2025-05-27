@@ -1,5 +1,7 @@
 import React from 'react'
 import { content } from '../../content'
+import logo from '../assets/images/logo.png'
+
 
 const Banner = () => (
   <div className="row banner">
@@ -8,6 +10,7 @@ const Banner = () => (
         {content.author}
       </h1>
 
+      <img className="mobile-logo" src={logo} alt="Logo" />
       <h3>
         <span>
           {content.description}

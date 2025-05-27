@@ -195,8 +195,6 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-
-
 /*  2. Typography
        Vertical rhythm with leading derived from 6
 --------------------------------------------------------------------- */
@@ -1371,6 +1369,12 @@ header .scrolldown a:hover {
 
 /* primary navigation
 --------------------------------------------------------------------- */
+
+.mobile-logo {
+  display: none;
+}
+
+
 #nav-wrap ul,
 #nav-wrap li,
 #nav-wrap a {
@@ -1859,6 +1863,19 @@ footer .social li:first-child {
 
   /* mobile navigation
  -------------------------------------------------------------------- */
+  .mobile-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    display: block;
+    background-color: #819C6F;
+    width: 75px;
+    padding: 10px;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+  }
+
 
   #nav-wrap {
     font: 12px 'opensans-bold', sans-serif;

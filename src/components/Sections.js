@@ -1,7 +1,7 @@
 import React from 'react'
 
 import About from './About'
-import Offerings from './Offerings'
+import Services from './Services'
 import Contact from './Contact'
 
 const Sections = () => (
@@ -10,8 +10,8 @@ const Sections = () => (
       <About />
     </section>
 
-    <section id="offerings">
-      <Offerings />
+    <section id="services">
+      <Services />
     </section>
 
     <section id="contacts">

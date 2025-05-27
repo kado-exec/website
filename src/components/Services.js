@@ -1,5 +1,5 @@
-import React from 'react'
-import { content } from '../../content'
+import React from 'react';
+import { content } from '../../content';
 
 const Services = () => (
   <div className="section section-grey">
@@ -11,29 +11,26 @@ const Services = () => (
       </div>
 
       <div className="nine columns main-col">
-        {content.what.map((what) => (
-          <>
-            <div className="row item">
-              <div className="twelve columns">
-                <h3>{what.title}</h3>
-                <p className="info">
-                  <i>{what.description}</i>
-                </p>
-                <p>
-                  <ul>
-                    {what.bullets.map((bullets) => (
-                      <li>• {bullets}</li>
-                    ))}
-                  </ul>
-                </p>
+        {content.what.map((what, index) => (
+          <div key={index} className="row item">
+            <div className="twelve columns">
+              <h3>{what.title}</h3>
+              <p className="info">
+                <i>{what.description}</i>
+              </p>
+              <div>
+                <ul>
+                  {what.bullets.map((bullets, bulletIndex) => (
+                    <li key={bulletIndex}>• {bullets}</li>
+                  ))}
+                </ul>
               </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
     </div>
-
   </div>
-)
+);
 
-export default Services
+export default Services;

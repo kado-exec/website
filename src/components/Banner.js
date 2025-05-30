@@ -11,11 +11,15 @@ const Banner = () => (
       </h1>
 
       <img className="mobile-logo" src={logo} alt="Logo" />
-      <h3>
+      {/* <h3>
         <span>
           {content.description}
         </span>
-      </h3><br /><br />
+      </h3><br /><br /> */}
+      <div className="intro-text">
+        Behind the Scenes Partner
+        <br />Demystifying Complexity to Achieve CEO Growth Goals
+      </div>
     </div>
   </div>
 )

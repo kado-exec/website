@@ -3,7 +3,7 @@ module.exports = {
     title: 'KADO',
     author: 'KADO Executive Operations',
     subtitle: 'Executive Operations',
-    description: 'Behind the Scenes Partner Demystifying Complexity to Achieve CEO Growth Goals',
+    description: 'Behind the Scenes Partner  Demystifying Complexity to Achieve CEO Growth Goals',
     about: [
       'CFO, Small Business Administration',
       'White House OMB Budget Examiner',

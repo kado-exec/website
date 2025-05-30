@@ -329,6 +329,16 @@ blockquote cite a:visited {
   border: none
 }
 
+.intro-text {
+  color: #F5F5F5;
+  text-align: center;
+  font-weight: bold;
+  /* font-style: italic; */
+  margin: 20px 0;
+  font-size: 1.2em;
+  margin-bottom: 0px;
+}
+
 /* ---------------------------------------------------------------------
 /*  Pull Quotes Markup
 /*
@@ -1260,11 +1270,13 @@ body {
 header {
   position: relative;
   height: auto;
-  min-height: 500px;
+  min-height: 200px;
   width: 100%;
-  background: #161415 url(../images/growth.jpg) no-repeat top center;
-  background-size: cover !important;
+  /* background: #161415 url(../images/trees.jpeg) no-repeat top center; */
+  background: #4D5D41 no-repeat top center;
+  background-size: contain;
   -webkit-background-size: cover !important;
+  background-repeat: no-repeat;
   text-align: center;
   overflow: hidden;
   padding-top: 100px;
@@ -1294,7 +1306,7 @@ header .banner-text {
 
 header .banner-text h1 {
   font: 70px/1.1em "opensans-bold", sans-serif;
-  color: #000000;
+  color: #F5F5F5;
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
@@ -1397,7 +1409,7 @@ header .scrolldown a:hover {
   position: fixed;
   left: 0;
   top: 0;
-  background-color: #819C6F;
+  background-color: #4D5D41;
   align-items: center;
 }
 
@@ -1421,7 +1433,7 @@ header .scrolldown a:hover {
 #nav-wrap ul.nav li a {
   text-decoration: none;
   font-size: 16px;
-  color: #000;
+  color: #fff;
 }
 
 .opaque {
@@ -1541,7 +1553,7 @@ ul#nav li.current a {
 
 /* Green background option */
 .section-green {
-  background-color: #819C6F;
+  background-color: #4D5D41;
   width: 100%;
   margin: 0;
   padding: 50px 0;
@@ -1599,7 +1611,7 @@ ul#nav li.current a {
 
 .section .header-col {
   padding-top: 9px;
-  text-align: right;
+  text-align: left;
 }
 
 .section .main-col {
@@ -1617,6 +1629,8 @@ ul#nav li.current a {
 }
 
 .section .main-col h3 {
+  /* text-align: left; */
+  margin-left: 0;
   font-size: 24px;
   font-weight: 400;
   color: #000000;
@@ -1869,7 +1883,7 @@ footer .social li:first-child {
     left: 10px;
     z-index: 1000;
     display: block;
-    background-color: #819C6F;
+    background-color: #4D5D41;
     width: 75px;
     padding: 10px;
     margin: 0 auto 20px;
@@ -1892,7 +1906,7 @@ footer .social li:first-child {
     width: 48px;
     height: 48px;
     text-align: left;
-    background-color: #819C6F;
+    background-color: #4D5D41;
     position: absolute;
     border: none;
     float: right;
@@ -1944,7 +1958,7 @@ footer .social li:first-child {
   #nav-wrap:target>ul#nav {
     display: block;
     padding: 30px 20px 48px 20px;
-    background: #819C6F;
+    background: #4D5D41;
     margin: 0 20px;
     clear: both;
     width: 70%;
@@ -2042,7 +2056,7 @@ footer .social li:first-child {
 
   .section .main-col h1,
   .section .main-col h3 {
-    text-align: center;
+    text-align: left;
     padding-right: 0;
   }
 

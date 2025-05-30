@@ -16,7 +16,7 @@ const Contact = () => (
             <h3>Kate Aaby</h3>
             <ul>
               {content.contact.map((bullet, index) => (
-                <li key={index}>• {bullet}</li>
+                <li key={index}>{bullet}</li>
               ))}
             </ul>
 
@@ -26,7 +26,7 @@ const Contact = () => (
             <h3>Kelsey Do</h3>
             <ul>
               {content.contact2.map((bullet, index) => (
-                <li key={index}>• {bullet}</li>
+                <li key={index}>{bullet}</li>
               ))}
             </ul>
 

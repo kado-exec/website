@@ -1486,6 +1486,8 @@ ul#nav li.current a {
   color: #000000;
 }
 
+
+
 /* ------------------------------------------------------------------ */
 /* c. About Section
 /* ------------------------------------------------------------------ */
@@ -1611,7 +1613,7 @@ ul#nav li.current a {
 
 .section .header-col {
   padding-top: 9px;
-  text-align: left;
+  text-align: right;
 }
 
 .section .main-col {
@@ -2060,6 +2062,10 @@ footer .social li:first-child {
     padding-right: 0;
   }
 
+  .section .header-col {
+    padding-top: 9px;
+    text-align: left;
+  }
 
   /* footer
  ------------------------------------------------------------------------ */
